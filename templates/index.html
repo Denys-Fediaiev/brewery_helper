@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            color: #343a40;
+        }
+
+        .btn {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Search for your favorite Brewery right now!</h1>
+        <div class="text-center">
+            <h3>Choose your option</h3>
+            <a href="{{url_for('search_by_query')}}" class="btn btn-primary">Search by query</a>
+            <a href="{{url_for('search_by_filters')}}" class="btn btn-primary">Search by filters</a>
+            <a href="{{url_for('show_random')}}" class="btn btn-primary">Random Brewery</a>
+        </div>
+    </div>
+</body>
+</html>

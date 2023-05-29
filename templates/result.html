@@ -1,0 +1,25 @@
+{% extends 'bootstrap/base.html' %}
+{% block content %}
+{% block styles %}
+{{ super() }}
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+{% endblock %}
+
+<h1>Search result</h1>
+{% for brew in breweries_list[:count_brew] %}
+<center><div class="container">
+    <p>Name: {{brew['name']}}</p>
+    <p>Type: {{brew['brewery_type']}}</p>
+    <p>Address: {{brew['address_1']}}</p>
+    <p>State: {{brew['state']}}</p>
+    <p>City: {{brew['city']}}</p>
+    <p>Country: {{brew['country']}}</p>
+    <p>Phone: {{brew['phone']}}</p>
+    <p>Website: <a href="{{brew['website_url']}}">Link</a></p>
+    <hr>
+</div>
+    </center>
+
+<a href="{{url_for('get_brewery_list')}}" id=by_random>Home</a>
+{% endfor %}
+{% endblock %}

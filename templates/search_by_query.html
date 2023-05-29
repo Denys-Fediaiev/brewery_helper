@@ -1,0 +1,27 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block styles %}
+{{ super() }}
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+{% endblock %}
+
+
+{% block title %}search by query{% endblock %}
+
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-8">
+
+      <h1>Search a new brewery </h1>
+
+      {{ wtf.quick_form(form, novalidate=True) }}
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
