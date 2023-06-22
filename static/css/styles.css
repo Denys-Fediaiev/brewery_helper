@@ -1,5 +1,27 @@
-
 body {
-    color: rebeccapurple;
-  background-image: url('https://assets-eu-01.kc-usercontent.com/aa24ba70-9a12-01ae-259b-7ef588a0b2ef/5fca6444-21a5-4e2b-8583-95e703857c96/Test-2400-1600.jpg');
+      background-image: url('https://galwaybaybrewery.com/wp-content/uploads/2021/10/the-brew-dock-draft-beer-bar-dublin-06.jpg');
+
+            padding: 20px;
+        }
+
+#result {
+    border-radius: 10%;
+    background-color: goldenrod;
+    color: whitesmoke;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+
+.btn {
+    margin-top: 10px;
+    }
+
+h1 {
+    color: whitesmoke;
+    font-weight: bold;
+}
+h3 {
+    color: whitesmoke;
 }
